@@ -9,7 +9,7 @@ steps:
   - |
     # Build and push images
     skaffold build --file-output=/workspace/artifacts.json \
-                   --default-repo=${_REGION}-docker.pkg.dev/contrarians/cicd-sample-repo \
+                   --default-repo=us-central1-docker.pkg.dev/contrarians/cicd-sample-repo \
                    --push=true
 
     # Test images
